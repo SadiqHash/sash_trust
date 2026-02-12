@@ -15,8 +15,6 @@ It analyzes source code and configuration to detect trust-breaking patterns befo
 It does not assume trust.
 It verifies it.
 
-The framework analyzes source code and configuration against defined policies and produces a measurable Trust Score.
-
 ---
 
 Why sash_trust Exists
