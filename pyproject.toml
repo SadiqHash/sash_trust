@@ -1,0 +1,42 @@
+[project]
+name = "sash_trust"
+version = "0.1.0"
+description = "SashTrust - security validation"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "SadiqHash", email = "saddeequjp@gmail.com" }
+]
+keywords = ["security", "cybersecurity", "trust", "validation", "web3", "ai", "blockchain"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+
+dependencies = [
+    "typer>=0.12",
+    "pydantic>=2.6",
+    "pyyaml>=6.0",
+    "cryptography>=42.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.3",
+    "black>=24.0",
+    "mypy>=1.8",
+    "bandit>=1.7",
+    "pre-commit>=3.6",
+]
+
+[project.scripts]
+sash-trust = "sash_trust.interfaces.cli.main:app"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
