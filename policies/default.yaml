@@ -1,0 +1,10 @@
+rules:
+  - name: detect_eval
+    type: regex
+    pattern: "eval\\("
+    severity: 15
+
+  - name: detect_private_key
+    type: regex
+    pattern: "PRIVATE_KEY"
+    severity: 25

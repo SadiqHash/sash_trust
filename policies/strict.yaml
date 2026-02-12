@@ -1,0 +1,10 @@
+rules:
+  - name: detect_eval
+    type: regex
+    pattern: "eval\\("
+    severity: 25
+
+  - name: detect_exec
+    type: regex
+    pattern: "exec\\("
+    severity: 30
